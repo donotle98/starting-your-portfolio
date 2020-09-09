@@ -23,14 +23,69 @@ a:hover{
 }
 hr{
     margin: auto;
-    width: 70%;
+    width: 90%;
+    background-color: orange;
+    height: 5px;
+    border: solid;
 }
 img{
     width: 100%;
 }
+header{
+    background-image: url("picofme/sunset.jpg");
+    background-size: cover;
+    padding: 10%;
+    height: 100%;
+}
+h1{
+    -webkit-text-stroke-width: .2px;
+    -webkit-text-stroke-color: white;
+    font-size: 5vw;
+    width: 100%;
+}
+h2{
+    text-align: center;
+    margin: 5%;
+    margin-top: 2%;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 25px;
+}
+p{
+    font-size: 20px;
+}
+
+/*Nav bar*/
+nav{
+    background-color: orange;
+    padding: 20px;
+    border: solid;
+    justify-content: center;
+}
+.ul-li-list ul{
+    margin: 2%;
+    text-decoration: none;
+    display: flex;
+}
+.ul-li-list ul li{
+    list-style-type: none;
+    padding-right: 20px;
+}
+.ul-li-list ul li a{
+    text-decoration: none;
+    padding: 10px;
+}
+.ul-li-list ul li a:hover{
+    color: white;
+    transition: .3s ease;
+}
+
+
+/*Intro section*/
 .picofme{
     width: 70%;
 }
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -41,30 +96,40 @@ img{
     flex: 1;
     margin: 5%;
 }
-.item p:hover{
-    -webkit-transform: scale(1.2);
+
+/*Contact Form*/
+.form-sect{
+}
+form{
+    padding: 30px;
+    box-sizing: border-box;
+}
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+input[type=submit]{
+    width: 200px;
+    height: 50px;
     background-color: orange;
-    border: solid;
     color: black;
-    padding: 7px;
-    transition: .5s ease;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 4px 4px black;
 }
-header{
-    width: 80%;
+.button-sect{
     margin: 5%;
-    margin-bottom: 10%;
 }
-h1{
-    text-align: center;
-}
-h2{
-    text-align: center;
-    margin: 5%;
-    margin-top: 2%;
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 25px;
-}
+
 @media all and (min-width: 800px){
     .wrapper{
         flex-direction: row;
@@ -73,7 +138,29 @@ h2{
     .item{
         margin: 2%;
     }
-    .below-sectone{
-
+    nav{
+        display:flex;
+        flex: 3;
+    }
+    .ul-li-list{
+        text-align: right;
+        float: right;
+    }
+    .ul-li-list ul li{
+        padding-right: 60px;
+    }
+    .item p:hover{
+        -webkit-transform: scale(1.2);
+        background-color: orange;
+        border: solid;
+        color: black;
+        padding: 7px;
+        transition: .8s ease;
+    }
+    form{
+        padding: 0px;
+        margin: auto;
+        text-align: center;
+        width: 50%;
     }
 }

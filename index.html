@@ -8,10 +8,29 @@
     <title>Portfolio</title>
 </head>
 <body>
+
+    
     <header>
         <h1>Donovan Le</h1>
     </header>
-    <h2>Who Am I?</h2>
+
+
+    <nav>
+        <div class="ul-li-list">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+    <h2 id="home">Who Am I?</h2>
     <div class="introSection">
         <div class="wrapper">
             <div class="item">
@@ -19,8 +38,12 @@
                 <p>I am a software engineering student. I hope to one day be a fullstack developer.</p>
             </div>
             <div class="item">
-                <p>I am currently located in North West Arkansas.</p>
-                <img src="picofme/AR-county.jpg" alt="map of AR">
+                <p>I am currently located in North West Arkansas. However, I was born in Santa Clara, California.
+                    But I like to say I am from Colorado Springs, Colorado. It's confusing, but I 
+                    spent majority of my childhood in Colorado Springs. Eventually when I become a full-fledged 
+                    developer I hope to be able to travel while working. My dream place to live is somewhere quiet 
+                    with beautiful scenary, I just got to find that somewhere.
+                </p>
             </div>
             <div class="item below-sectone">
                 <img src="picofme/mygithub.jpg" alt="Screenshot of my github" class="githubpic">
@@ -28,7 +51,11 @@
             </div>
         </div>
     </div>
-    <hr>
+
+
+    <hr id="aboutme">
+
+
     <h2>About Me</h2>
     <div class="abtmeSection">
         <div class="wrapper">
@@ -48,10 +75,14 @@
             </div>
         </div>
     </div>
-    <hr>
+
+
+    <hr id="projects">
+
+
     <h2>Projects</h2>
     <div class="projectSection">
-        <div class="wrapper">
+        <div class="wrapper first-project">
             <div class="item">
                 <p>project title</p>
             </div>
@@ -59,13 +90,27 @@
                 <p>project description</p>
             </div>
             <div class="item">
-                <span>link to project</span>
+                <span><a>link to project</a></span>
             </div>
         </div>
+        <div class="projectSection">
+            <div class="wrapper second-project">
+                <div class="item">
+                    <p>project title</p>
+                </div>
+                <div class="item">
+                    <p>project description</p>
+                </div>
+                <div class="item">
+                    <span><a>link to project</a></span>
+                </div>
+            </div>
     </div>
 
 
-    <hr>
+    <hr id="#contact">
+
+
     <h2>
         Contact Information
     </h2>
@@ -82,7 +127,34 @@
             </div>
         </div>
     </div>
-    <hr>
+    <div class="form-sect">
+        <form action="https://formspree.io/xdowqyod" method="POST">
+            <div>
+                <label for="name">Your name:</label>
+                <input type="text" placeholder="Your full name" name="Full Name" required>
+            </div>
+            <div>
+                <label for="email">Your email:</label>
+                <input type="text" placeholder="abcdefg@something.com" name="_toreplyto" required>
+            </div>
+            <div>
+                <label type="text" for="message">Your message:</label>
+                <textarea type="text" style="height:200px" placeholder="Donovan, you are so awesome. But your developing needs developing" name="message" required></textarea>
+            </div>
+            <div></div>
+            <div>
+                <label>Lets do some math!</label>
+                <label>What is 99+1</label>
+                <div>
+                    <input type="text" class="math-sect" style="width:10%" required>
+                </div>
+                
+            </div>
+            <div class="button-sect">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
     
 </body>
 </html>
